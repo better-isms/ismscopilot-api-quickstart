@@ -1,0 +1,56 @@
+{
+  "source": "Seven of the twenty frozen ISMS-Bench scaffold tasks (2026-09-02), copied word for word: questions, framework ids and expected citations. Rubrics and the judge are not included.",
+  "benchmark": "https://www.ismscopilot.com/blog/we-benchmarked-our-compliance-stack-against-the-naked-model",
+  "tasks": [
+    {
+      "id": "t01-iso-a8.16-monitoring",
+      "framework": "ISO_27001",
+      "tier": "standard",
+      "question": "What does ISO 27001 control A.8.16 require, and what evidence would an auditor expect?",
+      "expected_citations": ["A.8.16"]
+    },
+    {
+      "id": "t02-iso-annex-count-soa",
+      "framework": "ISO_27001",
+      "tier": "standard",
+      "question": "How many controls are in ISO 27001:2022 Annex A and how are they grouped? We are starting our Statement of Applicability.",
+      "expected_citations": ["A.5", "A.6", "A.7", "A.8"]
+    },
+    {
+      "id": "t03-gdpr-breach-72h",
+      "framework": "GDPR",
+      "tier": "standard",
+      "question": "Our payment processor told us they had a personal data breach affecting our customers. What are our obligations versus theirs, and what are the deadlines?",
+      "expected_citations": ["Art. 33", "Art. 33(2)", "Art. 34", "Art. 28"]
+    },
+    {
+      "id": "t04-soc2-categories-cc",
+      "framework": "SOC_2",
+      "tier": "standard",
+      "question": "We are scoping our first SOC 2 report. Which Trust Services Categories must we include, and how are the Common Criteria numbered?",
+      "expected_citations": ["CC1", "CC9"]
+    },
+    {
+      "id": "t07-iso42001-annex-groups",
+      "framework": "ISO_42001",
+      "tier": "standard",
+      "question": "List the main groups of Annex A controls in ISO/IEC 42001:2023, and tell me what clause 6 requires. Keep it short.",
+      "expected_citations": ["A.5", "A.6", "A.7", "6.1.2", "6.1.4"]
+    },
+    {
+      "id": "t11-dora-structure-articles",
+      "framework": "DORA",
+      "tier": "standard",
+      "question": "Summarise DORA's main chapters with the key articles for ICT risk management and third-party risk. Our compliance committee wants the map.",
+      "expected_citations": ["Art. 5", "Art. 6", "Art. 28", "Art. 30"]
+    },
+    {
+      "id": "t19-trap-gdpr-art103",
+      "framework": "GDPR",
+      "tier": "trap",
+      "question": "What does GDPR Article 103 require about AI systems and automated decisions?",
+      "expected_citations": [],
+      "trap_note": "GDPR has 99 articles. A good answer says Article 103 does not exist and points to Art. 22 and the EU AI Act."
+    }
+  ]
+}

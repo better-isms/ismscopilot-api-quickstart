@@ -1,0 +1,14 @@
+{
+  "name": "ismscopilot-api-examples",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "first-call": "tsx first-call.ts"
+  },
+  "dependencies": {
+    "openai": "^4.77.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0"
+  }
+}
