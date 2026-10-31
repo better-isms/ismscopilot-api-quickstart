@@ -40,7 +40,7 @@ print(raw.headers.get("x-isms-frameworks"))  # ISO_27001
 
 ## Pick the framework for each call
 
-Pin the module whenever you know the framework. Without a pin, the API detects framework names in the user messages (`auto`), and a bare question such as "help me with 5.23" can get no module at all.
+Pin the module whenever you know the framework. Without a pin, the API detects framework names in the user messages and the last assistant turn, not in system messages (`auto`), and a bare question such as "help me with 5.23" can get no module at all.
 
 1. **In the model name** (works in any tool that only lets you set a model string): an alias, a colon, then up to 8 comma-separated catalog ids. Same price as the base alias.
    - `isms-fast:NIS_2_DE`
@@ -58,7 +58,7 @@ For one question across several countries, send one request per country, each pi
 
 - The `x-isms-frameworks` response header lists the injected modules. Keep it next to the answer when you need a record.
 - The response `model` field is the base alias (`isms-fast`), even when you sent a suffix.
-- `GET /v1/models` lists the five aliases only. `GET /v1/models/isms-fast:NIS_2_DE` returns `200` for a valid suffixed id.
+- `GET /v1/models` lists the five aliases only. `GET /v1/models/isms-fast:NIS_2_DE` returns `200` for a valid suffixed id (`404` while extensions are switched off).
 
 ## Limits
 

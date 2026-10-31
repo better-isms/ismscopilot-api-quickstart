@@ -61,7 +61,7 @@ It prints a deterministic check per answer (expected citations found, identifier
 
 ## Use it from an agent
 
-`skills/ismscopilot-api/SKILL.md` is an agent skill (Claude Code, Codex, Cursor and other tools that read `SKILL.md`). Copy the `ismscopilot-api` folder into your agent's skills directory (for Claude Code: `~/.claude/skills/` or `.claude/skills/` in a project). It teaches the agent the base URL, the key, the limits, and how to pin a framework per call with the model name, for example `isms-fast:NIS_2_DE`.
+`skills/ismscopilot-api/SKILL.md` is an agent skill for Claude Code and other tools that read `SKILL.md`. Copy the `ismscopilot-api` folder into your agent's skills directory (for Claude Code: `~/.claude/skills/` or `.claude/skills/` in a project). It teaches the agent the base URL, the key, the limits, and how to pin a framework per call with the model name, for example `isms-fast:NIS_2_DE`.
 
 ## Model aliases
 
